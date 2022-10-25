@@ -440,5 +440,9 @@ PRODUCT_PACKAGES += \
     firmware_wlanmdsp.otaupdate_symlink \
     firmware_wlan_mac.bin_symlink
 
+# XperiaParts
+PRODUCT_PACKAGES += \
+    XperiaParts
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/sony/pdx257/pdx257-vendor.mk)
