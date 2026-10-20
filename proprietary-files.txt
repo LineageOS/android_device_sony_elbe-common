@@ -77,9 +77,6 @@ vendor/etc/zoom_noise_reduction/znr_default_44k.tbl
 vendor/etc/zoom_noise_reduction/znr_default_48k.tbl
 vendor/etc/zoom_noise_reduction/znr_parameter.xml
 vendor/etc/audio_app_white_list.xml
-vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/stub_audio_policy_configuration.xml
 vendor/etc/usecaseKvManager.xml
 vendor/etc/video_app_white_list.xml
 
