@@ -531,6 +531,11 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libvmfilexfer.so
 
+# Display (Sony)
+vendor/bin/hw/vendor.semc.hardware.aidldisplay-service.somc
+vendor/etc/init/vendor.semc.hardware.aidldisplay-somc.rc
+vendor/etc/vintf/manifest/vendor.semc.hardware.aidldisplay-somc.xml
+
 # Display calibration data
 vendor/etc/display/qdcm_calib_data_samsung_amoled_cmd_mode_dsi_panel_with_DSC.json
 

@@ -21,6 +21,7 @@ namespace_imports = [
     'device/sony/pdx257',
     'hardware/qcom-caf/sm8450-6.6',
     'hardware/qcom-caf/wlan',
+    'hardware/sony',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/dataservices',
