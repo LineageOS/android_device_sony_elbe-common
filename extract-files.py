@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/sony/pdx257',
+    'device/sony/elbe-common',
     'hardware/qcom-caf/sm8450-6.6',
     'hardware/qcom-caf/wlan',
     'hardware/sony',
@@ -43,8 +43,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('odm/etc/customization/XQ-FE44/config.prop', 'odm/etc/customization/XQ-FE54_EEA/config.prop', 'odm/etc/customization/XQ-FE72/config.prop'): blob_fixup()
-        .regex_replace('vendor', 'odm'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     ('vendor/bin/poweropt-service', 'vendor/lib64/hw/libaudioeffecthal.qti.so', 'vendor/lib64/libdpps.so','vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
@@ -93,7 +91,7 @@ blob_fixups: blob_fixups_user_type = {
 
 
 module = ExtractUtilsModule(
-    'pdx257',
+    'elbe-common',
     'sony',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,

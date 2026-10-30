@@ -1,9 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from PDX257_GLOBALEEA-A4_USER_72.2.A.2.38.
+## from PDX268_GLOBALEEA-A4_USER_74.1.A.2.42.
 
 # ACDBs
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
@@ -12,10 +10,6 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_1.43_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.21_0.0__3.0.0_0.0__eai_1.43_enpuv2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/parrot_qrd/QRD_acdb_cal.acdb
-vendor/etc/acdbdata/parrot_qrd/QRD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/parrot_qrd_sku1/QRD_parrot_sku1_acdb_cal.acdb
-vendor/etc/acdbdata/parrot_qrd_sku1/QRD_parrot_sku1_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
@@ -39,7 +33,6 @@ vendor/lib64/hw/libaudiocorehal.default.so;DISABLE_DEPS;REQUIRED=manifest_audioc
 vendor/lib64/hw/libaudiocorehal.qti.so;DISABLE_DEPS
 vendor/lib64/hw/libaudioeffecthal.qti.so;DISABLE_DEPS;REQUIRED=audioeffectservice_qti.xml
 vendor/lib64/libadm.so
-vendor/lib64/libar-pal.so;DISABLE_DEPS
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioplatformconverter.qti.so;DISABLE_DEPS
 vendor/lib64/libaudioserviceexampleimpl.so;DISABLE_DEPS
@@ -930,8 +923,6 @@ vendor/lib64/libQnnHtpV73Stub.so
 
 # NFC
 oem/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf;TRYSRCFIRST
-oem/etc/libnfc-nxp.conf:vendor/etc/libnfc-nxp.conf;TRYSRCFIRST
-vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
 # PASR
 vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
@@ -1456,20 +1447,6 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_transport_ppe.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 
-# SKU
-odm/etc/customization/XQ-FE44/config.prop
-odm/etc/customization/XQ-FE54_EEA/config.prop
-odm/etc/customization/XQ-FE72/config.prop
-odm/etc/customization/c001526/config.prop
-odm/etc/customization/c001707/config.prop
-odm/etc/customization/c001884/config.prop
-odm/etc/customization/c001894/config.prop
-odm/etc/customization/c002429/config.prop
-odm/etc/customization/c999990/config.prop
-odm/etc/customization/c999997/config.prop
-odm/etc/customization/c999998/config.prop
-odm/etc/customization/c999999/config.prop
-
 # SMC Invoke
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
@@ -1499,7 +1476,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 # Thermal engine
 vendor/bin/thermal-engine-v2
 vendor/etc/init/init_thermal-engine-v2.rc
-vendor/etc/thermal/thermal-engine.conf
 vendor/lib64/liblmthermallistner.so
 vendor/lib64/libsys-utils.so
 vendor/lib64/libthermalclient.so
@@ -1509,9 +1485,6 @@ vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
-
-# Touchscreen firmware
-vendor/firmware/focaltech_ts_fw_.bin
 
 # Trim Area
 odm/bin/taimport_vendor
@@ -1560,7 +1533,6 @@ vendor/lib64/libtrustedapploader.so
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini;SYMLINK=vendor/firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/bdwlan.elf;SYMLINK=vendor/firmware/qca6755/bdwlan.elf
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/regdb.bin;SYMLINK=vendor/firmware/qca6755/regdb.bin
 vendor/etc/wifi/vendor_cmd.xml
