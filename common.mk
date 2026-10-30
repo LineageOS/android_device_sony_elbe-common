@@ -275,7 +275,6 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
     SecureElementResTarget_Vendor \
     ServiceWifiRes-Elbe-Overlay \
-    SettingsProviderTarget_Product \
     SettingsResCommon_Sys \
     SystemUIResCommon_Sys \
     TelephonyResCommon_Sys \
@@ -306,7 +305,6 @@ PRODUCT_COPY_FILES += \
 
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 202404
-PRODUCT_SHIPPING_API_LEVEL := 35
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -417,8 +415,8 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
 DEVICE_MANIFEST_FILE += \
     $(CONFIG_HAL_SRC_DIR)/manifest_audio_qti_services.xml \
-    $(DEVICE_PATH)/vintf/manifest_parrot.xml \
-    $(DEVICE_PATH)/vintf/manifest.xml
+    $(COMMON_PATH)/vintf/manifest_parrot.xml \
+    $(COMMON_PATH)/vintf/manifest.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
@@ -445,4 +443,4 @@ PRODUCT_PACKAGES += \
     XperiaParts
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/sony/pdx257/pdx257-vendor.mk)
+$(call inherit-product, vendor/sony/elbe-common/elbe-common-vendor.mk)

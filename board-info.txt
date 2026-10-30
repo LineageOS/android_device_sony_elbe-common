@@ -1,1 +1,0 @@
-require board=pdx257|XQ-FE|XQ-FE54|XQ-FE72
