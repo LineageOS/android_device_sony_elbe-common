@@ -49,6 +49,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/init/fingerprint-rbs.rc': blob_fixup()
         .regex_replace(r'\s+disabled\n', ''),
+    'vendor/etc/init/qms.rc': blob_fixup()
+        .patch_file('blob-patches/qms.patch'),
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
