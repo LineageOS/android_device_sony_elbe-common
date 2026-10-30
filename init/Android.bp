@@ -58,6 +58,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qcom.sensors.sh",
+    src: "init.qcom.sensors.sh",
+    device_specific: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "init.qcom.sh",
     soc_specific: true,

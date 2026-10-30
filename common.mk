@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.recovery.rc \
+    init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
@@ -272,6 +273,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
     FrameworksResTarget_Product \
     FrameworksResTarget_Vendor \
+    LineageSDK-Stk3a5x-Overlay \
     NcmTetheringOverlay \
     SecureElementResTarget_Vendor \
     ServiceWifiRes-Elbe-Overlay \
