@@ -1,0 +1,8 @@
+--- a/qms.rc
++++ b/qms.rc
+@@ -8,4 +8,5 @@ on post-fs-data
+ 
+ service vendor.qms /vendor/bin/qms
+      class main
++     user root
+      group radio wakelock wifi inet net_admin
