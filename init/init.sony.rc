@@ -7,6 +7,9 @@ on init
     wait /dev/block/bootdevice/by-name/TA
     start tad
 
+on post-fs-data
+    exec - system system -- /odm/bin/init.qcom.sensors.sh
+
 on boot
     wait /sys/class/battchg_ext/smart_charging_activation
     write /sys/class/battchg_ext/smart_charging_activation 1
