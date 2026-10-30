@@ -1,0 +1,10 @@
+--- a/init.kernel.post_boot.sh
++++ b/init.kernel.post_boot.sh
+@@ -118,6 +118,7 @@ function configure_read_ahead_kb_values() {
+ }
+ 
+ function configure_memory_parameters() {
++	configure_zram_parameters
+ 	configure_read_ahead_kb_values
+ 
+ 	echo 100 > /proc/sys/vm/swappiness
