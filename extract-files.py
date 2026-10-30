@@ -46,7 +46,7 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     ('vendor/bin/poweropt-service', 'vendor/lib64/hw/libaudioeffecthal.qti.so', 'vendor/lib64/libdpps.so','vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
-        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so'),
     'vendor/etc/init/fingerprint-rbs.rc': blob_fixup()
         .regex_replace(r'\s+disabled\n', ''),
     'vendor/etc/init/qms.rc': blob_fixup()
